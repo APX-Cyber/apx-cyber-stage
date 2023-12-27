@@ -1,0 +1,302 @@
+.single-approach-box {
+    padding: 35px;
+    border-radius: 7px;
+    margin-bottom: 25px;
+    border: 1px solid #EBF1FF;
+    transition: var(--transition);
+    background-color: var(--whiteColor);
+
+    .icon {
+        margin-bottom: 25px;
+    }
+    h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    &:hover {
+        border-color: var(--primaryColor);
+    }
+}
+.d-none {
+    &.d-block {
+        display: block !important;
+    }
+}
+.approach-style-two-area {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.approach-style-list-tabs {
+    ul {
+        list-style-type: none;
+        margin-bottom: 0;
+        padding-left: 0;
+
+        li {
+            display: inline-block;
+            margin-bottom: 20px;
+            position: relative;
+            border-radius: 5px;
+            padding: 25px;
+            
+            &::before {
+                top: 0;
+                left: 0;
+                height: 0;
+                width: 2px;
+                content: '';
+                position: absolute;
+                border-radius: 50px;
+                transition: var(--transition);
+                background: var(--primaryGradientColor);
+            }
+            h3 {
+                font-size: 24px;
+                margin-bottom: 18px;
+            }
+            p {
+                margin-bottom: 0;
+            }
+            &.active {
+                background-color: #faf4ff;
+
+                &::before {
+                    height: 100%;
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.approach-style-tabs-image {
+    img {
+        border-radius: 10px;
+    }
+}
+.approach-style-tabs-content {
+    .number {
+        background: linear-gradient(to right, #603364, #683466, #703567, #773568, #7f3668);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: var(--transition);
+        margin-bottom: 25px;
+        line-height: 1;
+        opacity: 0.5;
+        font: {
+            family: var(--headingFontFamily);
+            style: italic;
+            weight: bold;
+            size: 100px;
+        };
+    }
+    h4 {
+        font-size: 35px;
+        margin-bottom: 18px;
+        background: var(--primaryGradientColorTwo);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+    .approach-btn {
+        font-weight: bold;
+        display: inline-block;
+        background: var(--primaryGradientColor);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: var(--transition);
+
+        &:hover {
+            letter-spacing: 1px;
+        }
+    }
+}
+.approach-style-shape {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .single-approach-box {
+        padding: 20px;
+
+        .icon {
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+    }
+    .approach-style-list-tabs {
+        ul {
+            li {
+                padding: 20px;
+                margin-bottom: 25px;
+                background-color: #f9f9f9;
+
+                h3 {
+                    font-size: 18px;
+                    margin-bottom: 12px;
+                }
+            }
+        }
+    }
+    .approach-style-tabs-image {
+        margin: {
+            top: 25px;
+            bottom: 20px;
+        };
+    }
+    .approach-style-tabs-content {
+        .number {
+            font-size: 45px;
+            margin-bottom: 14px;
+        }
+        h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+    }
+    .approach-style-shape {
+        display: none;
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .single-approach-box {
+        padding: 25px;
+
+        h3 {
+            font-size: 20px;
+        }
+    }
+    .approach-style-list-tabs {
+        ul {
+            li {
+                margin-bottom: 25px;
+                background-color: #f9f9f9;
+
+                h3 {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .approach-style-tabs-image {
+        margin: {
+            top: 25px;
+            bottom: 20px;
+        };
+    }
+    .approach-style-tabs-content {
+        max-width: 600px;
+
+        .number {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+        h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .single-approach-box {
+        padding: 20px;
+    }
+    .approach-style-list-tabs {
+        .row {
+            align-items: center;
+        }
+        ul {
+            li {
+                background-color: transparent !important;
+                margin-bottom: 20px;
+                padding: 0;
+                
+                h3 {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+    .approach-style-tabs-content {
+        .number {
+            font-size: 80px;
+            margin-bottom: 15px;
+        }
+        h4 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+    }
+    .approach-style-shape {
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        top: 0;
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .single-approach-box {
+        padding: 25px;
+    }
+    .approach-style-list-tabs {
+        .row {
+            align-items: center;
+        }
+        ul {
+            li {
+                margin-bottom: 15px;
+                padding: 15px;
+                
+                h3 {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1600px*/
+@media only screen and (min-width: 1600px) {}

@@ -1,0 +1,92 @@
+<div
+    class="funfacts-area pt-100 pb-75"
+    [ngClass]="{'d-none': router.url === '/index-5' || router.url === '/index-6' || router.url === '/index-7'}"
+>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-3 col-6 col-md-3">
+                <div class="single-funfacts-box">
+                    <div class="icon">
+                        <img src="assets/img/funfacts/funfacts-icon1.png" alt="funfacts-icon">
+                    </div>
+                    <h3><span [countUp]="3">00</span><span class="sign">k+</span></h3>
+                    <p>Cyber Security Projects</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-3 col-6 col-md-3">
+                <div class="single-funfacts-box">
+                    <div class="icon">
+                        <img src="assets/img/funfacts/funfacts-icon2.png" alt="funfacts-icon">
+                    </div>
+                    <h3><span [countUp]="1575">00</span></h3>
+                    <p>Customers Globally</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-3 col-6 col-md-3">
+                <div class="single-funfacts-box">
+                    <div class="icon">
+                        <img src="assets/img/funfacts/funfacts-icon3.png" alt="funfacts-icon">
+                    </div>
+                    <h3><span [countUp]="250">00</span><span class="sign">+</span></h3>
+                    <p>Cyber Security Experts</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-3 col-6 col-md-3">
+                <div class="single-funfacts-box">
+                    <div class="icon">
+                        <img src="assets/img/funfacts/funfacts-icon4.png" alt="funfacts-icon">
+                    </div>
+                    <h3><span [countUp]="150">00</span><span class="sign">%</span></h3>
+                    <p>Client Retention Rate</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- This funfacts for Home Demo - 5 -->
+<div
+    class="funfacts-style-two-area pt-100 pb-75 d-none"
+    [ngClass]="{'d-block': router.url === '/index-5' || router.url === '/index-6' || router.url === '/index-7'}"
+>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-3 col-6 col-md-3">
+                <div class="single-funfacts-card">
+                    <div class="icon">
+                        <i class="lni lni-pencil-alt"></i>
+                    </div>
+                    <h3><span [countUp]="3">00</span><span class="sign">k+</span></h3>
+                    <p>Cyber Security Projects</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-3 col-6 col-md-3">
+                <div class="single-funfacts-card">
+                    <div class="icon">
+                        <i class="lni lni-world"></i>
+                    </div>
+                    <h3><span [countUp]="1575">00</span></h3>
+                    <p>Customers Globally</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-3 col-6 col-md-3">
+                <div class="single-funfacts-card">
+                    <div class="icon">
+                        <i class="lni lni-printer"></i>
+                    </div>
+                    <h3><span [countUp]="250">00</span><span class="sign">+</span></h3>
+                    <p>Cyber Security Experts</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-3 col-6 col-md-3">
+                <div class="single-funfacts-card">
+                    <div class="icon">
+                        <i class="lni lni-user"></i>
+                    </div>
+                    <h3><span [countUp]="150">00</span><span class="sign">%</span></h3>
+                    <p>Client Retention Rate</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

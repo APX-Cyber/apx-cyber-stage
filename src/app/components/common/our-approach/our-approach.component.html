@@ -1,0 +1,168 @@
+<div
+    class="approach-area pt-100 pb-75"
+    [ngClass]="{'d-none': router.url === '/index-5' || router.url === '/index-6' || router.url === '/index-7'}"
+>
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Approaches To Cyber Security</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6">
+                <div class="single-approach-box">
+                    <div class="icon">
+                        <img src="assets/img/about/icon1.png" alt="icon">
+                    </div>
+                    <h3>Increased and evolving threat</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-approach-box">
+                    <div class="icon">
+                        <img src="assets/img/about/icon2.png" alt="icon">
+                    </div>
+                    <h3>Widening attack surface</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-approach-box">
+                    <div class="icon">
+                        <img src="assets/img/about/icon3.png" alt="icon">
+                    </div>
+                    <h3>Structural weaknesses</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- This section for Home Demo - 5 -->
+<div
+    class="approach-style-two-area pb-100 d-none"
+    [ngClass]="{'d-block': router.url === '/index-5' || router.url === '/index-6'}"
+>
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Approach Is Simple But Not Time-Wasting</h2>
+        </div>
+        <div class="approach-style-list-tabs">
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <ul>
+                        <li>
+                            <h3>Evolving Threat</h3>
+                            <p>Lorem ipsum dolor sit amet consecte adipi scing elit eleifend dictum potentirder mattis viverra.</p>
+                        </li>
+                        <li class="active">
+                            <h3>Widening Attack</h3>
+                            <p>Lorem ipsum dolor sit amet consecte adipi scing elit eleifend dictum potentirder mattis viverra.</p>
+                        </li>
+                        <li>
+                            <h3>Structural Weaknesses</h3>
+                            <p>Lorem ipsum dolor sit amet consecte adipi scing elit eleifend dictum potentirder mattis viverra.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-9 col-md-12">
+                    <owl-carousel-o [options]="approachSlides">
+                        <ng-template carouselSlide>
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="approach-style-tabs-image">
+                                        <img src="assets/img/approach/approach-1.jpg" alt="image">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="approach-style-tabs-content">
+                                        <div class="number">01</div>
+                                        <h4>Evolving Threat</h4>
+                                        <p>Lorem ipsum dolor sit amet, consecte adipi scing elit. Adipiscing eleifend dictum potentirder mattis viverra.</p>
+                                        <a routerLink="/services-details" class="approach-btn">Learn More <i class="lni lni-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="approach-style-tabs-image">
+                                        <img src="assets/img/approach/approach-2.jpg" alt="image">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="approach-style-tabs-content">
+                                        <div class="number">02</div>
+                                        <h4>Widening Attack</h4>
+                                        <p>Lorem ipsum dolor sit amet, consecte adipi scing elit. Adipiscing eleifend dictum potentirder mattis viverra.</p>
+                                        <a routerLink="/services-details" class="approach-btn">Learn More <i class="lni lni-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="approach-style-tabs-image">
+                                        <img src="assets/img/approach/approach-3.jpg" alt="image">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="approach-style-tabs-content">
+                                        <div class="number">03</div>
+                                        <h4>Structural Weaknesses</h4>
+                                        <p>Lorem ipsum dolor sit amet, consecte adipi scing elit. Adipiscing eleifend dictum potentirder mattis viverra.</p>
+                                        <a routerLink="/services-details" class="approach-btn">Learn More <i class="lni lni-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </owl-carousel-o>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="approach-style-shape">
+        <img src="assets/img/approach/approach-shape.png" alt="image">
+    </div>
+</div>
+
+<!-- This section for Home Demo - 7 -->
+<div
+    class="approach-style-two-area ptb-100 d-none"
+    [ngClass]="{'d-block': router.url === '/index-7'}"
+>
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Approach Is Simple But Not Time-Wasting</h2>
+        </div>
+        <div class="approach-style-list-tabs">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <img src="assets/img/approach/approach-4.jpg" alt="image">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <ul>
+                        <li class="active">
+                            <h3>Increased And Evolving Threat</h3>
+                            <p>Lorem ipsum dolor sit amet consecte adipi scing elit eleifend dictum potentirder mattis viverra consecte adipi scing elit eleifend.</p>
+                        </li>
+                        <li class="active">
+                            <h3>Widening Attack Surface</h3>
+                            <p>Lorem ipsum dolor sit amet consecte adipi scing elit eleifend dictum potentirder mattis viverra consecte adipi scing elit eleifend.</p>
+                        </li>
+                        <li class="active">
+                            <h3>Structural Weaknesses</h3>
+                            <p>Lorem ipsum dolor sit amet consecte adipi scing elit eleifend dictum potentirder mattis viverra consecte adipi scing elit eleifend.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="approach-style-shape">
+        <img src="assets/img/approach/approach-shape-2.png" alt="image">
+    </div>
+</div>

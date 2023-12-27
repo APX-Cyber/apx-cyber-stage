@@ -1,0 +1,83 @@
+.not-found-area {
+    border-top: 1px solid #eeeeee;
+}
+.not-found-content {
+    text-align: center;
+
+    h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    p {
+        max-width: 500px;
+        font: {
+            size: 18px;
+            family: var(--headingFontFamily);
+        };
+        margin: {
+            right: auto;
+            left: auto;
+        };
+    }
+    .default-btn {
+        margin-top: 10px;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .not-found-area {
+        border-top: none;
+    }
+    .not-found-content {
+        img {
+            margin-bottom: 12px;
+        }
+        h3 {
+            font-size: 17px;
+            margin-bottom: 12px;
+        }
+        p {
+            max-width: 100%;
+            font-size: 14px;
+        }
+        .default-btn {
+            margin-top: 5px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .not-found-area {
+        border-top: none;
+    }
+    .not-found-content {
+        h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 16px;
+        }
+        .default-btn {
+            margin-top: 0;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px*/
+@media only screen and (min-width: 1600px) {}

@@ -1,0 +1,184 @@
+.blog-area {
+    position: relative;
+    z-index: 1;
+
+    .shape2 {
+        left: 1%;
+        top: auto;
+        bottom: 2%;
+    }
+    .shape6 {
+        top: 35%;
+        right: 1%;
+        left: auto;
+        max-width: 70px;
+    }
+}
+.single-blog-post {
+    margin-bottom: 25px;
+
+    .image {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            transition: var(--transition);
+        }
+        &::before {
+            width: 0;
+            top: 50%;
+            left: 50%;
+            height: 0;
+            opacity: 0;
+            z-index: 2;
+            content: '';
+            display: block;
+            position: absolute;
+            border-radius: 100%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, .2);
+        }
+        &::after {
+            top: 0;
+            left: -75%;
+            z-index: 2;
+            width: 50%;
+            content: '';
+            height: 100%;
+            display: block;
+            position: absolute;
+            transform: skewX(-25deg);
+            background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+            background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+        }
+    }
+    .content {
+        margin-top: 20px;
+
+        .meta {
+            padding-left: 0;
+            margin-bottom: 12px;
+            list-style-type: none;
+
+            li {
+                color: var(--secondaryColor);
+                display: inline-block;
+                position: relative;
+                margin-right: 34px;
+
+                &::before {
+                    top: 50%;
+                    width: 15px;
+                    height: 1px;
+                    content: '';
+                    right: -24px;
+                    position: absolute;
+                    transform: translateY(-50%);
+                    background-color: #707070;
+                }
+                a {
+                    display: block;
+                    color: var(--secondaryColor);
+
+                    &:hover {
+                        color: var(--primaryColor);
+                    }
+                }
+                &:last-child {
+                    margin-right: 0;
+
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+        h3 {
+            font-size: 22px;
+            line-height: 1.4;
+            margin-bottom: 12px;
+        }
+    }
+    &:hover {
+        .image {
+            img {
+                transform: scale(1.1);
+            }
+            &::before {
+                animation: circle .75s;
+            }
+            &::after {
+                animation: shine .75s;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .single-blog-post {
+        .content {
+            .meta {
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-size: 17px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+    .single-blog-post {
+        .content {
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .blog-area {
+        .shape6 {
+            top: 10%;
+            right: 8%;
+            left: auto;
+            max-width: 70px;
+        }
+    }
+
+}
+
+/* Min width 1600px*/
+@media only screen and (min-width: 1600px) {
+
+    .blog-area {
+        .shape2 {
+            left: 3%;
+            top: auto;
+            bottom: 9%;
+        }
+        .shape6 {
+            top: 35%;
+            right: 5%;
+            left: auto;
+            max-width: 100%;
+        }
+    }
+
+}

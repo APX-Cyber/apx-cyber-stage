@@ -1,0 +1,128 @@
+.safer-world-area {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    .container-fluid {
+        padding: {
+            left: 0;
+            right: 0;
+        };
+    }
+}
+.safer-world-card {
+    transition: var(--transition);
+    border: 1px solid #fff3f8;
+    transform: scale(.9);
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 30px;
+
+    .safer-world-image {
+        overflow: hidden;
+        border-radius: 10px;
+
+        a {
+            display: block;
+
+            img {
+                border-radius: 10px;
+                display: inline-block;
+                transition: var(--transition);
+            }
+        }
+    }
+    .safer-world-content {
+        margin-top: 30px;
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .safer-world-btn {
+            font-weight: bold;
+            display: inline-block;
+            transition: var(--transition);
+            background: var(--primaryGradientColor);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    &:hover {
+        background: #fff3f8;
+
+        .safer-world-image {
+            a {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .safer-world-content {
+            .safer-world-btn {
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .safer-world-card {
+        padding: 20px;
+
+        .safer-world-content {
+            margin-top: 20px;
+    
+            h3 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            p {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .safer-world-card {
+        padding: 25px;
+    
+        .safer-world-content {
+            margin-top: 25px;
+    
+            h3 {
+                font-size: 20px;
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .safer-world-card {
+        .safer-world-content {
+            h3 {
+                font-size: 22px;
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}

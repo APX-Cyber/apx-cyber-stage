@@ -1,0 +1,287 @@
+.feedback-area {
+    position: relative;
+    z-index: 1;
+
+    .shape3 {
+        bottom: 0;
+    }
+    &.bg-image {
+        background: {
+            image: url(../../../../assets/img/feedback-bg.jpg);
+            position: center center;
+            repeat: no-repeat;
+            size: cover;
+        };
+        .section-title {
+            h2 {
+                color: var(--whiteColor);
+            }
+            p {
+                color: var(--whiteColor);
+            }
+        }
+        &::before {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            content: '';
+            opacity: .70;
+            position: absolute;
+            background-color: #000000;
+        }
+    }
+}
+.single-feedback-box {
+    padding: 40px;
+    margin-bottom: 25px;
+    border: 1px solid #f5f5f5;
+    transition: var(--transition);
+    background-color: var(--whiteColor);
+
+    p {
+        font-size: 15px;
+    }
+    .client-info {
+        margin-top: 25px;
+
+        img {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+        }
+        .title {
+            margin-left: 20px;
+
+            h3 {
+                margin-bottom: 10px;
+                font-size: 18px;
+
+                span {
+                    color: var(--secondaryColor);
+                    font: {
+                        size: 16px;
+                        weight: normal;
+                    };
+                }
+            }
+            .rating {
+                font-size: 16px;
+                color: #eba400;
+                
+                i {
+                    margin-right: 2px;
+                }
+            }
+        }
+    }
+    &:hover {
+        border-color: var(--primaryColor);
+    }
+    &.bg-color {
+        border: 0;
+        background-color: rgba(255, 255, 255, .50);
+    }
+    &.bg-f9f9f9 {
+        background-color: #f9f9f9;
+    }
+}
+.single-feedback-item {
+    z-index: 1;
+    padding: 50px;
+    position: relative;
+    border-radius: 7px;
+    margin-bottom: 25px;
+    transition: var(--transition);
+    background-color: var(--whiteColor);
+
+    p {
+        font-size: 19px;
+        line-height: 1.7;
+    }
+    .client-info {
+        margin-top: 20px;
+
+        img {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+        }
+        .title {
+            margin-left: 20px;
+
+            h3 {
+                margin-bottom: 10px;
+                font-size: 18px;
+
+                span {
+                    color: var(--secondaryColor);
+                    font: {
+                        size: 16px;
+                        weight: normal;
+                    };
+                }
+            }
+            .rating {
+                font-size: 16px;
+                color: #eba400;
+            }
+        }
+    }
+    .quote {
+        z-index: -1;
+        right: 50px;
+        bottom: 50px;
+        position: absolute;
+        width: auto !important;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .single-feedback-box {
+        padding: 20px;
+
+        p {
+            font-size: 13px;
+        }
+        .client-info {
+            margin-top: 15px;
+
+            img {
+                width: 75px;
+                height: 75px;
+            }
+            .title {
+                margin-left: 15px;
+
+                h3 {
+                    margin-bottom: 10px;
+                    font-size: 15px;
+
+                    span {
+                        display: block;
+                        font-size: 13px;
+                        margin-top: 10px;
+                    }
+                }
+                .rating {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .single-feedback-item {
+        padding: 20px;
+
+        .quote {
+            display: none !important;
+        }
+        p {
+            font-size: 14px;
+        }
+        .client-info {
+            margin-top: 15px;
+
+            img {
+                width: 75px;
+                height: 75px;
+            }
+            .title {
+                margin-left: 15px;
+
+                h3 {
+                    margin-bottom: 10px;
+                    font-size: 15px;
+
+                    span {
+                        display: block;
+                        font-size: 13px;
+                        margin-top: 10px;
+                    }
+                }
+                .rating {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .single-feedback-box {
+        padding: 30px;
+
+        p {
+            font-size: 14px;
+        }
+        .client-info {
+            margin-top: 20px;
+
+            .title {
+                h3 {
+                    font-size: 16px;
+
+                    span {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .single-feedback-item {
+        padding: 25px;
+
+        .quote {
+            display: none !important;
+        }
+        p {
+            font-size: 15px;
+        }
+        .client-info {
+            margin-top: 20px;
+
+            .title {
+                h3 {
+                    font-size: 16px;
+
+                    span {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .single-feedback-item {
+        padding: 30px;
+
+        .quote {
+            right: 30px;
+            bottom: 30px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px*/
+@media only screen and (min-width: 1600px) {}

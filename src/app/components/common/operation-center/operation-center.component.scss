@@ -1,0 +1,434 @@
+.operation-center-area {
+    z-index: 1;
+    position: relative;
+
+    .shape3 {
+        bottom: 20%;
+        z-index: 1;
+        left: 13%;
+    }
+    .shape4 {
+        bottom: auto;
+        left: auto;
+        right: 5%;
+        top: 25%;
+    }
+    .shape2 {
+        bottom: 15%;
+        right: 10%;
+        left: auto;
+        top: auto;
+    }
+    .shape6 {
+        top: 0;
+        left: 4%;
+    }
+}
+.operation-center-image {
+    border-radius: 20px;
+    margin-right: 10px;
+    height: 100%;
+    background: {
+        image: url(../../../../assets/img/operation-center.jpg);
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    };
+    img {
+        display: none;
+        border-radius: 20px;
+    }
+}
+.operation-center-content {
+    padding: {
+        left: 10px;
+        top: 100px;
+        bottom: 100px;
+    };
+    h2 {
+        margin-bottom: 15px;
+        font-size: 35px;
+    }
+    .features-list {
+        display: flex;
+        padding-left: 0;
+        flex-wrap: wrap;
+        list-style-type: none;
+        margin: {
+            bottom: 0;
+            left: calc(var(--bs-gutter-x) * -.5);
+            right: calc(var(--bs-gutter-x) * -.5);
+        };
+        li {
+            flex: 0 0 auto;
+            width: 50%;
+            padding: {
+                left: calc(var(--bs-gutter-x) * .5);
+                right: calc(var(--bs-gutter-x) * .5);
+            };
+            span {
+                display: block;
+                position: relative;
+                padding-left: 40px;
+                margin-top: 20px;
+                font: {
+                    size: 18px;
+                    weight: 600;
+                    family: var(--headingFontFamily);
+                };
+                i {
+                    left: 0;
+                    top: 50%;
+                    width: 30px;
+                    height: 30px;
+                    font-size: 15px;
+                    line-height: 30px;
+                    border-radius: 50%;
+                    text-align: center;
+                    position: absolute;
+                    transform: translateY(-50%);
+                    color: var(--primaryColor);
+                    background-color: #F5F8FF;
+                    transition: var(--transition);
+                }
+                &:hover {
+                    i {
+                        background-color: var(--primaryColor);
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+    }
+}
+.d-none {
+    &.d-block {
+        display: block !important;
+    }
+}
+.lunio-cybersecurity-area {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.lunio-cybersecurity-image {
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+
+    img {
+        border-radius: 20px;
+        transition: var(--transition);
+    }
+    &:hover {
+        img {
+            transform: scale(1.2);
+        }
+    }
+    .cybersecurity-shape {
+        position: absolute;
+        left: 25px;
+        bottom: 35px;
+        animation: movescale 3s linear infinite;
+    }
+}
+.lunio-cybersecurity-content {
+    padding-left: 45px;
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+    .features-list {
+        padding: 0;
+        margin: {
+            top: 20px;
+            bottom: 0;
+        };
+        li {
+            list-style-type: none;
+            margin-bottom: 25px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+            span {
+                position: relative;
+                padding-left: 40px;
+                font: {
+                    size: 18px;
+                    weight: 600;
+                    family: var(--headingFontFamily);
+                };
+                i {
+                    left: 0;
+                    top: 50%;
+                    width: 30px;
+                    height: 30px;
+                    font-size: 15px;
+                    line-height: 30px;
+                    border-radius: 50%;
+                    text-align: center;
+                    position: absolute;
+                    transform: translateY(-50%);
+                    color: var(--primaryColor);
+                    background-color: #F2F2F2;
+                    transition: var(--transition);
+                }
+                &:hover {
+                    i {
+                        background-color: var(--primaryColor);
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+    }
+}
+.cybersecurity-shape-2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .operation-center-image {
+        height: auto;
+        margin-right: 0;
+        background-image: unset !important;
+
+        img {
+            display: inline-block;
+        }
+    }
+    .operation-center-content {
+        padding: {
+            left: 0;
+            top: 30px;
+            bottom: 0;
+        };
+        h2 {
+            margin-bottom: 12px;
+            font-size: 24px;
+        }
+        .features-list {
+            margin-top: -10px;
+
+            li {
+                width: 100%;
+
+                span {
+                    padding-left: 30px;
+                    margin-top: 20px;
+                    font-size: 14px;
+
+                    i {
+                        width: 20px;
+                        height: 20px;
+                        font-size: 12px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .lunio-cybersecurity-image {
+        border-radius: 10px;
+        margin-bottom: 25px;
+    
+        img {
+            border-radius: 10px;
+        }
+        .cybersecurity-shape {
+            display: none;
+        }
+    }
+    .lunio-cybersecurity-content {
+        padding-left: 0;
+    
+        h2 {
+            margin-bottom: 12px;
+            font-size: 24px;
+        }
+        .row {
+            margin-top: -15px;
+        }
+        .features-list {
+            margin-top: 20px;
+
+            li {
+                margin-bottom: 20px;
+    
+                span {
+                    padding-left: 40px;
+                    font-size: 15px;
+
+                    i {
+                        width: 25px;
+                        height: 25px;
+                        font-size: 14px;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+    }
+    .cybersecurity-shape-2 {
+        display: none;
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .operation-center-image {
+        height: auto;
+        margin-right: 0;
+        background-image: unset;
+
+        img {
+            display: inline-block;
+        }
+    }
+    .operation-center-content {
+        margin-top: 30px;
+        padding: {
+            top: 0;
+            left: 0;
+            bottom: 0;
+        };
+        h2 {
+            font-size: 29px;
+        }
+        .features-list {
+            margin-top: -10px;
+
+            li {
+                span {
+                    padding-left: 35px;
+                    font-size: 15px;
+
+                    i {
+                        width: 25px;
+                        height: 25px;
+                        font-size: 14px;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+    }
+    .lunio-cybersecurity-content {
+        padding-left: 0;
+        margin-top: 25px;
+    
+        h2 {
+            margin-bottom: 15px;
+            font-size: 29px;
+        }
+        .features-list {
+            margin-top: 5px;
+
+            li {
+                span {
+                    padding-left: 40px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .operation-center-content {
+        padding: {
+            left: 0;
+            top: 80px;
+            bottom: 80px;
+        };
+        .features-list {
+            margin-top: -10px;
+
+            li {
+                span {
+                    padding-left: 30px;
+                    font-size: 14px;
+
+                    i {
+                        width: 20px;
+                        height: 20px;
+                        font-size: 12px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .lunio-cybersecurity-content {
+        padding-left: 0;
+    
+        h2 {
+            margin-bottom: 15px;
+            font-size: 35px;
+        }
+        .features-list {
+            margin-top: 5px;
+
+            li {
+                margin-bottom: 20px;
+    
+                span {
+                    font-size: 15px;
+                    padding-left: 28px;
+
+                    i {
+                        width: 20px;
+                        height: 20px;
+                        font-size: 12px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .operation-center-content {
+        .features-list {
+            li {
+                span {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    .lunio-cybersecurity-content {
+        padding-left: 0;
+
+        .features-list {
+            li {
+                span {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1600px*/
+@media only screen and (min-width: 1600px) {}

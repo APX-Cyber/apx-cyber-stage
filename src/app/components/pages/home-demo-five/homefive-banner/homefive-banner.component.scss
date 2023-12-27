@@ -1,0 +1,203 @@
+.new-main-banner-slides-item {
+    z-index: 1;
+    position: relative;
+    background: {
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    };
+    padding: {
+        top: 320px;
+        bottom: 200px;
+    };
+    .container-fluid {
+        padding: {
+            left: 30px;
+            right: 30px;
+        };
+    }
+    &::before {
+        background: #1C0531;
+        position: absolute;
+        opacity: .77;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        content: "";
+        right: 0;
+        left: 0;
+        top: 0;
+    }
+}
+.new-main-banner-slides-content {
+    max-width: 830px;
+
+    .sub-title {
+        font-weight: bold;
+        background: var(--primaryGradientColor);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+        margin-bottom: 18px;
+    }
+    h1 {
+        font-size: 95px;
+        margin-bottom: 12px;
+        color: var(--whiteColor);
+    }
+    p {
+       color: #c5c3c8; 
+    }
+    .banner-btn-box  {
+        padding-left: 0;
+        list-style-type: none;
+        margin: {
+            top: 35px;
+            bottom: 0;
+        };
+        li {
+            display: inline-block;
+            margin-right: 25px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .new-main-banner-slides-item {
+        padding: {
+            top: 60px;
+            bottom: 90px;
+        };
+        .container-fluid {
+            padding: {
+                right: calc(var(--bs-gutter-x) * 0.5);
+                left: calc(var(--bs-gutter-x) * 0.5);
+            };
+        }
+    }
+    .new-main-banner-slides-content {
+        max-width: 100%;
+        text-align: center;
+
+        .sub-title {
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-size: 30px;
+            line-height: 1.4;
+        }
+        .banner-btn-box {
+            margin-top: 20px;
+
+            li {
+                margin: {
+                    left: 5px;
+                    right: 5px;
+                };
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .new-main-banner-slides-item {
+        .container-fluid {
+            max-width: 540px;
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .new-main-banner-slides-item {
+        padding: {
+            top: 100px;
+            bottom: 100px;
+        };
+        .container-fluid {
+            max-width: 720px;
+            padding: {
+                right: calc(var(--bs-gutter-x) * 0.5);
+                left: calc(var(--bs-gutter-x) * 0.5);
+            };
+        }
+    }
+    .new-main-banner-slides-content {
+        max-width: 645px;
+
+        .sub-title {
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-size: 44px;
+            margin-bottom: 15px;
+        }
+        .banner-btn-box {
+            margin-top: 25px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .new-main-banner-slides-item {
+        padding: {
+            top: 230px;
+            bottom: 120px;
+        };
+        .container-fluid {
+            padding: {
+                right: calc(var(--bs-gutter-x) * 0.5);
+                left: calc(var(--bs-gutter-x) * 0.5);
+            };
+        }
+    }
+    .new-main-banner-slides-content {
+        max-width: 845px;
+    
+        .sub-title {
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-size: 65px;
+        }
+        .banner-btn-box  {
+            margin-top: 25px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {
+
+    .new-main-banner-slides-item {
+        .container-fluid {
+            max-width: 1800px;
+            padding: {
+                left: 120px;
+                right: 120px;
+            };
+        }
+    }
+
+}

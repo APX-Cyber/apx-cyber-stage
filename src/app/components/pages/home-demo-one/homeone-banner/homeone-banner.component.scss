@@ -1,0 +1,215 @@
+.main-banner-area {
+    z-index: 1;
+    padding-top: 50px;
+    position: relative;
+
+    .container-fluid {
+        padding: {
+            left: 30px;
+            right: 30px;
+        };
+    }
+}
+.main-banner-content {
+    h1 {
+        font-size: 55px;
+        margin-bottom: 18px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .btn-box {
+        margin-top: 30px;
+
+        .link-btn {
+            color: var(--secondaryColor);
+            text-decoration: underline;
+            display: inline-block;
+            padding-right: 13px;
+            position: relative;
+            margin-left: 20px;
+            font: {
+                size: 16px;
+                weight: 500;
+                family: var(--headingFontFamily);
+            };
+            &:hover {
+                color: var(--primaryColor);
+            }
+            i {
+                top: 50%;
+                right: -2px;
+                font-size: 13px;
+                position: absolute;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+.main-banner-image {
+    text-align: center;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .main-banner-area {
+        padding-top: 60px;
+
+        .container-fluid {
+            padding: {
+                left: var(--bs-gutter-x,.75rem);
+                right: var(--bs-gutter-x,.75rem);
+            };
+        }
+    }
+    .main-banner-content {
+        text-align: center;
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 13px;
+        }
+        .btn-box {
+            margin-top: 20px;
+            justify-content: center;
+
+            .default-btn {
+                padding: 10px 18px;
+            }
+            .link-btn {
+                padding-right: 10px;
+                margin-left: 15px;
+                font-size: 14px;
+
+                i {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .main-banner-image {
+        margin-top: 30px;
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    .main-banner-area {
+        .container-fluid {
+            max-width: 540px;
+        }
+    }
+    .main-banner-content {
+        .btn-box {
+            .default-btn {
+                padding: 10px 25px;
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .main-banner-area {
+        padding-top: 80px;
+
+        .container-fluid {
+            max-width: 720px;
+            padding: {
+                left: var(--bs-gutter-x,.75rem);
+                right: var(--bs-gutter-x,.75rem);
+            };
+        }
+    }
+    .main-banner-content {
+        text-align: center;
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 18px;
+        }
+        p {
+            font-size: 14px;
+            max-width: 575px;
+            margin: {
+                left: auto;
+                right: auto;
+            };
+        }
+        .btn-box {
+            margin-top: 20px;
+            justify-content: center;
+
+            .link-btn {
+                margin-left: 15px;
+                font-size: 14px;
+            }
+        }
+    }
+    .main-banner-image {
+        margin-top: 30px;
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .main-banner-area {
+        .container-fluid {
+            padding: {
+                left: var(--bs-gutter-x,.75rem);
+                right: var(--bs-gutter-x,.75rem);
+            };
+        }
+    }
+    .main-banner-content {
+        h1 {
+            font-size: 50px;
+        }
+        p {
+            font-size: 14px;
+        }
+        .btn-box {
+            margin-top: 25px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .main-banner-area {
+        .container-fluid {
+            padding: {
+                left: 25px;
+                right: 25px;
+            };
+        }
+    }
+
+}
+
+/* Min width 1600px*/
+@media only screen and (min-width: 1600px) {
+
+    .main-banner-area {
+        .container-fluid {
+            max-width: 1800px;
+            padding: {
+                left: 120px;
+                right: 120px;
+            };
+        }
+    }
+    
+}

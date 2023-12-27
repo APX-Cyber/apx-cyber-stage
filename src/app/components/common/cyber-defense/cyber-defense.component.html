@@ -1,0 +1,206 @@
+<div class="cyber-defenses-area ptb-100">
+    <div class="container">
+        <div class="section-title">
+            <h2>Expert Support To Enhance Your Cyber Defenses</h2>
+        </div>
+        <div class="cyber-defenses-list-tabs">
+            <ul class="nav nav-tabs d-block border-0">
+                <li class="nav-item" [ngClass]="{'active': currentTab === 'tab1'}">
+                    <button type="button" class="nav-link position-relative shadow-none mb-0" (click)="switchTab($event, 'tab1')">
+                        Banking
+                    </button>
+                </li>
+                <li class="nav-item" [ngClass]="{'active': currentTab === 'tab2'}">
+                    <button type="button" class="nav-link position-relative shadow-none mb-0" (click)="switchTab($event, 'tab2')">
+                        Manufacturing
+                    </button>
+                </li>
+                <li class="nav-item" [ngClass]="{'active': currentTab === 'tab3'}">
+                    <button type="button" class="nav-link position-relative shadow-none mb-0" (click)="switchTab($event, 'tab3')">
+                        Oil & Gas
+                    </button>
+                </li>
+                <li class="nav-item" [ngClass]="{'active': currentTab === 'tab4'}">
+                    <button type="button" class="nav-link position-relative shadow-none mb-0" (click)="switchTab($event, 'tab4')">
+                        Insurance
+                    </button>
+                </li>
+                <li class="nav-item" [ngClass]="{'active': currentTab === 'tab5'}">
+                    <button type="button" class="nav-link position-relative shadow-none mb-0" (click)="switchTab($event, 'tab5')">
+                        Health Care
+                    </button>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade" id="tab1" *ngIf="currentTab === 'tab1'">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="cyber-defenses-content">
+                                <h3>Banking Security</h3>
+                                <p>Lorem ipsum dolor sit amet consecte adipi scing elit adipiscing eleifend dictum poteder mattis viverra lorem ipsum dolor sit amet consecte adipisci ng elit adipiscingdiper eleifend dictum potenti mattis viverra.</p>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-6 col-md-6">
+                                        <ul class="cyber-list">
+                                            <li><i class="lni lni-checkmark"></i> Focus on The Basics</li>
+                                            <li><i class="lni lni-checkmark"></i> Educate Customers</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <ul class="cyber-list">
+                                            <li><i class="lni lni-checkmark"></i> Be Proactive</li>
+                                            <li><i class="lni lni-checkmark"></i> Tighten Internal Controls</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consecte adipi scing elit adipiscing eleifend dictum poteder mattis viverra lorem ipsum dolor sit amet consecte adipisci ng elit adipiscingdiper eleifend dictum potenti mattis viverra.</p>
+                                <div class="cyber-btn">
+                                    <a routerLink="/contact" class="default-btn-two">Get Started Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="cyber-defenses-image">
+                                <img src="assets/img/cyber-defenses/cyber-defenses-1.png" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab2" *ngIf="currentTab === 'tab2'">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="cyber-defenses-content">
+                                <h3>Manufacturing</h3>
+                                <p>Lorem ipsum dolor sit amet consecte adipi scing elit adipiscing eleifend dictum poteder mattis viverra lorem ipsum dolor sit amet consecte adipisci ng elit adipiscingdiper eleifend dictum potenti mattis viverra.</p>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-6 col-md-6">
+                                        <ul class="cyber-list">
+                                            <li><i class="lni lni-checkmark"></i> Focus on The Basics</li>
+                                            <li><i class="lni lni-checkmark"></i> Educate Customers</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <ul class="cyber-list">
+                                            <li><i class="lni lni-checkmark"></i> Be Proactive</li>
+                                            <li><i class="lni lni-checkmark"></i> Tighten Internal Controls</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consecte adipi scing elit adipiscing eleifend dictum poteder mattis viverra lorem ipsum dolor sit amet consecte adipisci ng elit adipiscingdiper eleifend dictum potenti mattis viverra.</p>
+                                <div class="cyber-btn">
+                                    <a routerLink="/contact" class="default-btn-two">Get Started Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="cyber-defenses-image">
+                                <img src="assets/img/cyber-defenses/cyber-defenses-2.jpg" class="rounded-circle" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab3" *ngIf="currentTab === 'tab3'">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="cyber-defenses-content">
+                                <h3>Oil & Gas</h3>
+                                <p>Lorem ipsum dolor sit amet consecte adipi scing elit adipiscing eleifend dictum poteder mattis viverra lorem ipsum dolor sit amet consecte adipisci ng elit adipiscingdiper eleifend dictum potenti mattis viverra.</p>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-6 col-md-6">
+                                        <ul class="cyber-list">
+                                            <li><i class="lni lni-checkmark"></i> Focus on The Basics</li>
+                                            <li><i class="lni lni-checkmark"></i> Educate Customers</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <ul class="cyber-list">
+                                            <li><i class="lni lni-checkmark"></i> Be Proactive</li>
+                                            <li><i class="lni lni-checkmark"></i> Tighten Internal Controls</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consecte adipi scing elit adipiscing eleifend dictum poteder mattis viverra lorem ipsum dolor sit amet consecte adipisci ng elit adipiscingdiper eleifend dictum potenti mattis viverra.</p>
+                                <div class="cyber-btn">
+                                    <a routerLink="/contact" class="default-btn-two">Get Started Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="cyber-defenses-image">
+                                <img src="assets/img/cyber-defenses/cyber-defenses-3.jpg" class="rounded-circle" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab4" *ngIf="currentTab === 'tab4'">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="cyber-defenses-content">
+                                <h3>Insurance</h3>
+                                <p>Lorem ipsum dolor sit amet consecte adipi scing elit adipiscing eleifend dictum poteder mattis viverra lorem ipsum dolor sit amet consecte adipisci ng elit adipiscingdiper eleifend dictum potenti mattis viverra.</p>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-6 col-md-6">
+                                        <ul class="cyber-list">
+                                            <li><i class="lni lni-checkmark"></i> Focus on The Basics</li>
+                                            <li><i class="lni lni-checkmark"></i> Educate Customers</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <ul class="cyber-list">
+                                            <li><i class="lni lni-checkmark"></i> Be Proactive</li>
+                                            <li><i class="lni lni-checkmark"></i> Tighten Internal Controls</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consecte adipi scing elit adipiscing eleifend dictum poteder mattis viverra lorem ipsum dolor sit amet consecte adipisci ng elit adipiscingdiper eleifend dictum potenti mattis viverra.</p>
+                                <div class="cyber-btn">
+                                    <a routerLink="/contact" class="default-btn-two">Get Started Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="cyber-defenses-image">
+                                <img src="assets/img/cyber-defenses/cyber-defenses-4.jpg" class="rounded-circle" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab5" *ngIf="currentTab === 'tab5'">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="cyber-defenses-content">
+                                <h3>Health Care</h3>
+                                <p>Lorem ipsum dolor sit amet consecte adipi scing elit adipiscing eleifend dictum poteder mattis viverra lorem ipsum dolor sit amet consecte adipisci ng elit adipiscingdiper eleifend dictum potenti mattis viverra.</p>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-6 col-md-6">
+                                        <ul class="cyber-list">
+                                            <li><i class="lni lni-checkmark"></i> Focus on The Basics</li>
+                                            <li><i class="lni lni-checkmark"></i> Educate Customers</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <ul class="cyber-list">
+                                            <li><i class="lni lni-checkmark"></i> Be Proactive</li>
+                                            <li><i class="lni lni-checkmark"></i> Tighten Internal Controls</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consecte adipi scing elit adipiscing eleifend dictum poteder mattis viverra lorem ipsum dolor sit amet consecte adipisci ng elit adipiscingdiper eleifend dictum potenti mattis viverra.</p>
+                                <div class="cyber-btn">
+                                    <a routerLink="/contact" class="default-btn-two">Get Started Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="cyber-defenses-image">
+                                <img src="assets/img/cyber-defenses/cyber-defenses-5.jpg" class="rounded-circle" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cyber-defenses-shape">
+        <img src="assets/img/cyber-defenses/cyber-defenses-shape.png" alt="image">
+    </div>
+</div>

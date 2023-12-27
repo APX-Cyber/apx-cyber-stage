@@ -1,0 +1,216 @@
+.security-area {
+    .container-fluid {
+        padding: {
+            left: 0;
+            right: 0;
+        };
+        .row {
+            margin: {
+                left: 0;
+                right: 0;
+            };
+            .col-lg-8, .col-lg-4 {
+                padding: {
+                    left: 0;
+                    right: 0;
+                };
+            }
+        }
+    }
+}
+.security-image {
+    height: 100%;
+    background: {
+        image: url(../../../../assets/img/security-bg.jpg);
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    };
+    img {
+        display: none;
+    }
+}
+.security-content {
+    margin-left: -280px;
+    padding: {
+        top: 100px;
+        bottom: 100px;
+    };
+    .content {
+        z-index: 1;
+        padding: 80px;
+        border-radius: 7px;
+        position: relative;
+        background-color: rgba(255, 255, 255, .93);
+
+        h2 {
+            margin-bottom: 12px;
+            font-size: 36px;
+        }
+        p {
+            max-width: 540px;
+        }
+        .features-list {
+            padding-left: 0;
+            list-style-type: none;
+            margin: {
+                top: 20px;
+                bottom: 0;
+            };
+            li {
+                margin-bottom: 12px;
+                position: relative;
+                padding-left: 27px;
+                font: {
+                    size: 18px;
+                    weight: 500;
+                    family: var(--headingFontFamily);
+                };
+                i {
+                    color: var(--primaryColor);
+                    position: absolute;
+                    font-size: 20px;
+                    top: 3px;
+                    left: 0;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .shape4 {
+            bottom: 12%;
+            left: auto;
+            right: 30%;
+        }
+        .shape2 {
+            top: 29%;
+            left: auto;
+            right: 10%;
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .security-area {
+        .container-fluid {
+            padding: {
+                left: var(--bs-gutter-x,.75rem);
+                right: var(--bs-gutter-x,.75rem);
+            };
+        }
+    }
+    .security-image {
+        height: auto;
+        background-image: unset !important;
+
+        img {
+            display: inline-block;
+        }
+    }
+    .security-content {
+        padding: {
+            top: 0;
+            bottom: 0;
+        };
+        margin: {
+            left: 0;
+            top: 30px;
+        };
+        .content {
+            padding: 0;
+    
+            h2 {
+                margin-bottom: 10px;
+                font-size: 24px;
+            }
+            .features-list {
+                margin-top: 15px;
+    
+                li {
+                    padding-left: 22px;
+                    font-size: 14px;
+    
+                    i {
+                        font-size: 14px;
+                        top: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    
+    .security-area {
+        .container-fluid {
+            max-width: 540px;
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .security-area {
+        .container-fluid {
+            max-width: 720px;
+            padding: {
+                left: var(--bs-gutter-x,.75rem);
+                right: var(--bs-gutter-x,.75rem);
+            };
+        }
+    }
+    .security-image {
+        height: auto;
+        background-image: unset !important;
+
+        img {
+            display: inline-block;
+        }
+    }
+    .security-content {
+        margin: {
+            left: 0;
+            top: 30px;
+        };
+        padding: {
+            top: 0;
+            bottom: 0;
+        };
+        .content {
+            padding: 0;
+
+            h2 {
+                font-size: 29px;
+            }
+            .features-list {
+                li {
+                    padding-left: 24px;
+                    font-size: 15px;
+    
+                    i {
+                        font-size: 14px;
+                        top: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px*/
+@media only screen and (min-width: 1600px) {}

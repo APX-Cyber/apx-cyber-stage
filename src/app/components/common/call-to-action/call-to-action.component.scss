@@ -1,0 +1,73 @@
+.cta-inner {
+    z-index: 1;
+    padding: 100px;
+    text-align: center;
+    border-radius: 7px;
+    position: relative;
+    background: {
+        color: var(--primaryColor);
+        image: url(../../../../assets/img/cta-bg.jpg);
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    };
+    h2 {
+        font-size: 36px;
+        max-width: 600px;
+        color: var(--whiteColor);
+        margin: {
+            left: auto;
+            right: auto;
+            bottom: 30px;
+        };
+    }
+    .default-btn {
+        background-color: var(--whiteColor);
+        color: var(--primaryColor);
+
+        &:hover {
+            background-color: var(--whiteColor);
+            color: var(--whiteColor);
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .cta-inner {
+        padding: 60px 15px;
+
+        h2 {
+            font-size: 24px;
+            max-width: 100%;
+            margin-bottom: 25px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .cta-inner {
+        padding: 80px;
+
+        h2 {
+            font-size: 29px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1600px*/
+@media only screen and (min-width: 1600px) {}

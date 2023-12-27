@@ -1,0 +1,27 @@
+<div class="how-we-work-area">
+    <div class="container">
+        <div class="how-we-work-inner-box">
+            <div class="section-title">
+                <h2>We Want To Show How We Work</h2>
+            </div>
+            <div class="how-we-work-video">
+                <video autoplay class="background-video">
+                    <source src="assets/img/how-we-work/video.webm" type="video/mp4">
+                    <source src="assets/img/how-we-work/video.webm" type="video/ogg">
+                    Your browser does not support HTML video.
+                </video>
+                <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide">
+                    <a
+                        data-lg-size="1280-720"
+                        data-src="https://www.youtube.com/watch?v=NmZ4auNPJvU"
+                        data-sub-html="<p>Watch Video</p>"
+                    >
+                        <div class="video-btn">
+                            <i class="lni lni-play"></i>
+                        </div>
+                    </a>
+                </lightgallery>
+            </div>
+        </div>
+    </div>
+</div>

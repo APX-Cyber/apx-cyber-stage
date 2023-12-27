@@ -1,0 +1,13 @@
+.partner-item-card {
+    text-align: center;
+    overflow: hidden;
+
+    img {
+        transition: var(--transition);
+    }
+    &:hover {
+        img {
+            transform: scale(.9);
+        }
+    }
+}

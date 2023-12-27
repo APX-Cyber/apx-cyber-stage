@@ -1,0 +1,6 @@
+<app-navbar-style-one *ngIf="!(location == '/index-3' || location == '/index-5' || location == '/index-7')"></app-navbar-style-one>
+<app-navbar-style-two *ngIf="(location == '/index-3' || location == '/index-5' || location == '/index-7')"></app-navbar-style-two>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
+<ngx-scrolltop></ngx-scrolltop>
+<notifier-container></notifier-container>
